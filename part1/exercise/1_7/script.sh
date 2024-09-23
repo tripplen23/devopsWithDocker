@@ -1,6 +1,7 @@
-while true
-do
-  echo "Input website:"
-  read website; echo "Searching.."
-  sleep 1; curl http://$website
-done
+#!/bin/bash
+
+echo "Searching.."
+sleep 1
+curl http://$1
+
+# $1 is the first argument passed to the script

@@ -15,4 +15,4 @@ RUN chmod +x script.sh
 RUN sed -i 's/\r$//' script.sh
 
 # Run script when container starts
-CMD ./script.sh
+ENTRYPOINT [ "./script.sh" ] 
